@@ -1,24 +1,15 @@
-// import { AppRegistry, View } from 'react-native';
+import { AppRegistry, View } from 'react-native';
 import * as React from 'react';
-import { Switchable, Program, Model, RootView, ViewProps } from 'reelm-core';
-
-export default "a";
-
-// export type Model = {};
-// export type Switchable = {};
-// export type Program<A, B> = {a: A, b: B};
-// export type ViewProps<A, B, C> = {a: A, b: B, c: C};
-// class RootView extends React.Component<{program: Program<{}, {}>}>{
-// }
+import { Switchable, Program, Model, RootView, ViewProps } from 'hathaway-core';
 
 export function start<M extends Model, Msg extends Switchable>(name: string, program: Program<M, Msg>) {
   const Component: React.SFC<ViewProps<M, Msg, {}>> = function () {
     return (
-      <div>
+      <View>
         {React.createElement(RootView, { program })}
-      </div>
+      </View>
     );
   };
 
-  // AppRegistry.registerComponent(name, () => Component);
+  AppRegistry.registerComponent(name, () => Component);
 }

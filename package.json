@@ -1,16 +1,20 @@
 {
-  "name": "reelm-native",
-  "version": "0.0.0",
-  "description": "reelm-native",
+  "name": "hathaway-native",
+  "version": "0.0.1",
+  "description": "Main package for the React Native side of Hathaway.",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/naddeoa/hathaway-native",
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "Anthony Naddeo",
+    "email": "anthony.naddeo@gmail.com",
+    "url": "https://github.com/naddeoa/hathaway-native"
   },
   "keywords": [
-    ""
+    "react",
+    "hathaway",
+    "minimal",
+    "simple",
+    "native"
   ],
   "files": [
     "lib"
@@ -29,7 +33,9 @@
     "watch": "npm run build -- --watch",
     "watch:test": "jest --watch"
   },
-  "dependencies": {},
+  "dependencies": {
+    "hathaway-core": "0.0.1"
+  },
   "devDependencies": {
     "@types/immutable": "^3.8.7",
     "@types/jest": "^20.0.5",
