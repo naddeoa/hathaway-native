@@ -1,6 +1,6 @@
 {
   "name": "hathaway-native",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Main package for the React Native side of Hathaway.",
   "license": "MIT",
   "repository": "https://github.com/naddeoa/hathaway-native",
@@ -34,7 +34,7 @@
     "watch:test": "jest --watch"
   },
   "dependencies": {
-    "hathaway-core": "0.0.1"
+    "hathaway-core": "0.0.6"
   },
   "devDependencies": {
     "@types/immutable": "^3.8.7",
